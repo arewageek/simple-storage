@@ -5,11 +5,11 @@ pragma solidity ^0.8.0;
 contract SimpleStorage {
     uint data;
 
-    function store(uint input) external {
+    function store(uint input) external payable{
         data = input;
     }
 
-    function add(uint input) external {
+    function add(uint input) external payable{
         data = data + input;
     }
 
